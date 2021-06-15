@@ -1722,9 +1722,10 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 
 
-
-
-
+footer{
+  position: fixed;
+  bottom: 0;
+}
 
 
 .footer-distributed{
@@ -1877,4 +1878,39 @@ form input[type="submit"], form button, form input[type="reset"] {
 
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
+
+@media only screen and (max-height:800px){
+  footer { position: static; }
+  
+}
+
+@media  only screen and (max-width: 1180px){
+
+  header{
+    width: 100%;
+    padding: 0 5%;
+  }
+  .Name{
+    width: 100%;
+    padding: 0 2%;
+  }
+
+  
+ 
+.footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+
+
+
 
